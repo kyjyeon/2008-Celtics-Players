@@ -11,25 +11,32 @@ var PlayerSchema = mongoose.Schema({
         required: true
     },
     height:{
+        required: true,
         type: String
     },
     pts:{
+        required: true,
         type: String
     },
     ast:{
+        required: true,
         type: String
     },
     FG:{
+        required: true,
         type: String
     },
     FT:{
+        required: true,
         type: String
     },
     ThreeP:{
-        type: String
+        type: String,
+        required: true
     },
     Description:{
-        type: String
+        type: String,
+        required: true
     }
 });
 
