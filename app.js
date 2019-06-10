@@ -22,15 +22,6 @@ app.get('/api/players', function(req, res) {
     })
 })
 
-app.get('/api/players/:id', function(req, res) {
-    Player.getPlayersID(req.params.id,function(err, player){
-        if(err){
-            throw err;
-        }
-        res.json(player)
-    })
-})
-
 app.post('/api/players', function(req, res) {
     var player = req.body;
     Player.addPlayers(player,function(err, player){
