@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/Celtics');
 var db = mongoose.connection;
 
 app.get('/', function(req, res){
-    res.send('Use /api/players to get restful api');
+    res.send('Default page');
 })
 
 app.get('/api/players', function(req, res) {
