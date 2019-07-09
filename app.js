@@ -4,7 +4,7 @@ bodyParser = require('body-parser');
 mongoose = require('mongoose');
 app.use(bodyParser.json())
 
-var PORT = ["My Port"];
+var PORT = "My Port number";
 
 Player = require('./models/players.js')
 
