@@ -4,7 +4,7 @@ bodyParser = require('body-parser');
 mongoose = require('mongoose');
 app.use(bodyParser.json())
 
-var PORT = 3010;
+var PORT = ["My Port"];
 
 Player = require('./models/players.js')
 
@@ -46,5 +46,5 @@ app.put('/api/players/:id', function(req, res) {
 })
 
 app.listen(PORT, () => {
-    console.log("Listening at port 3010")
+    console.log(`Listening on PORT ${PORT}...`)
 })
