@@ -46,7 +46,7 @@ var Player = module.exports = mongoose.model('Player', PlayerSchema)
 module.exports.getPlayers = function(callback, limit){
     Player.find(callback).limit(limit);
 }
-
+//ID
 module.exports.getPlayersID = function(id,callback){
     Player.findById(id,callback);
 }
@@ -55,6 +55,7 @@ module.exports.getPlayersID = function(id,callback){
 module.exports.addPlayers = function(player, callback){
     Player.create(player, callback);
 }
+
 module.exports.updatePlayers = function(id, player, options, callback){
     var query = {id: id}
     var update = {
