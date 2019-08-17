@@ -1,6 +1,6 @@
 mongoose = require('mongoose')
 
-//Player info
+//Structure Player info
 var PlayerSchema = mongoose.Schema({
     name:{
         type: String,
