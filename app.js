@@ -1,7 +1,8 @@
-express = require("express");
-app = express();
-bodyParser = require('body-parser');
-mongoose = require('mongoose');
+const express = require("express");
+const app = express();
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
 app.use(bodyParser.json())
 
 var PORT = "My Port number";
