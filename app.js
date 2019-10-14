@@ -16,8 +16,8 @@ app.get('/', function(req, res){
     res.send('Default page');
 })
 
-app.get('/api/players', function(req, res) {
-    Player.getPlayers(function(err, players){
+app.get('/api/players', (req, res)=> {
+    Player.getPlayers((err, players)=>{
         if(err){
             throw err;
         }
